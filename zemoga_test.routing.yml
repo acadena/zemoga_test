@@ -1,0 +1,7 @@
+zemoga_test.request_info_user:
+  path: 'request-user-info'
+  defaults:
+    _form:  '\Drupal\zemoga_test\Form\RequestInfoUser'
+    _title: 'Request user info'
+  requirements:
+    _permission: 'access content'

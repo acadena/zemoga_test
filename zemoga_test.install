@@ -1,0 +1,58 @@
+<?php
+
+function zemoga_test_schema(){
+	
+	$schema['zemoga_test_user_data'] = array(
+
+		'fields' => array(
+			'user_id'=>array(
+		      'type'=>'serial',
+		      'not null' => TRUE,
+		    ),
+		    'first_name' => array(
+		      'type' => 'varchar',
+		      'length' => 40,
+		      'not null' => TRUE,
+		    ),
+		    'last_name' => array(
+		      'type' => 'varchar',
+		      'length' => 40,
+		      'not null' => TRUE,
+		    ),
+		    'date_of_birth' => array(
+		      'type' => 'varchar',
+		      'mysql_type' => 'date',
+		      'not null' => TRUE,
+		    ),
+		    'gender' => array(
+		      'type' => 'varchar',
+		      'length' => 10,
+		      'not null' => TRUE,
+		    ),
+		    'city' => array(
+		      'type' => 'varchar',
+		      'length' => 255,
+		      'not null' => TRUE,
+		    ),
+		    'phone' => array(
+		      'type' => 'varchar',
+		      'length' => 40,
+		      'not null' => FALSE,
+		    ),
+		    'address' => array(
+		      'type' => 'varchar',
+		      'length' => 255,
+		      'not null' => FALSE,
+		    ),
+		    'created_at' => array(
+		      'type' => 'varchar',
+		      'mysql_type' => 'datetime',
+		      'not null' => TRUE,
+		    ),
+		),
+		'primary key' => array('user_id'),
+
+	);
+
+	return $schema;
+}

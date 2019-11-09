@@ -1,0 +1,5 @@
+name: Zemoga Test - Request User Info
+type: module
+description: Zemoga Test by Andres Cadena
+core: 8.x
+package: Custom
